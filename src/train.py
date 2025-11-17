@@ -58,5 +58,5 @@ def main():
         test_size=args.test_size
     )
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()    
