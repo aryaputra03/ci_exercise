@@ -38,8 +38,8 @@ def test_calculate_metrics():
     assert "precision" in metrics
     assert "recall" in metrics
     assert "f1_score" in metrics
-    assert 0 <= metrics["accuarcy"] <=1
-    assert metrics["accuarcy"] == 0.8
+    assert 0 <= metrics["accuracy"] <=1
+    assert metrics["accuracy"] == 0.8
 
 def test_calculate_metrics_perfect():
     y_true = np.array([0, 1, 0, 1])
