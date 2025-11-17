@@ -25,6 +25,18 @@ def train_model(
     print("Evaluating Model...")
     y_pred = model.predict(X_test)
     metrics = calculate_metrics(y_test, y_pred)
+
+    print("Metrics:")
+    for key, values in metrics.items():
+        print(f"    {key}: {values:.4f}")
+
+    Path(model_path).parent.mkdir(parents=True, exist_ok=True)
+    model.save(model_path)
+    print(f"Model save to {model_path}")
+
+    with open(metrics_path, 'w') as f:
+        json.dump(metrics, f, indent=2)
+
     print(f"Metrics Saved to: {metrics_path}")
     return metrics
 
