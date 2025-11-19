@@ -39,7 +39,7 @@ def test_model_predict(sample_data):
     prediction = model.predict(X)
 
     assert prediction.shape[0] == X.shape[0]
-    assert set(prediction).issubclass({0,1})
+    assert set(np.unique(prediction)).issubset({0, 1})
 
 def test_model_predict_proba(sample_data):
     X, y = sample_data
