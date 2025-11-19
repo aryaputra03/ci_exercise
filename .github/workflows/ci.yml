@@ -113,7 +113,7 @@ jobs:
 
       - name: Train Model
         run: |
-          python -m src.train --n-estimators 50 --model models/model.pkl --metrics models.metrics.json
+          python -m src.train --n-estimators 50 --model models/model.pkl --metrics models/metrics.json
 
       - name: Display metrics
         run: |
