@@ -3,7 +3,6 @@ import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import StandardScaler
 import joblib
-from typing import Optional
 
 class MLModel:
     def __init__(self, n_estimators: int = 100, random_state: int = 42):

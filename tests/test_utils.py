@@ -1,5 +1,4 @@
 """Test for Utility Function"""
-import pytest
 import numpy as np
 from src.utils import load_data, split_data, calculate_metrics
 
