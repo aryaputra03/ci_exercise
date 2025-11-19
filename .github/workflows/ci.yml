@@ -120,7 +120,7 @@ jobs:
           cat models/metrics.json
 
       - name: Upload model artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: trained-model
           path: |
